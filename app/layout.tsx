@@ -64,13 +64,13 @@ export default function RootLayout({
                 aria-label="Main navigation"
               >
                 <a
-                  href="/#featured"
+                  href="/press/#featured"
                   className="hover:text-accent transition-colors"
                 >
                   Featured
                 </a>
                 <a
-                  href="/#collections"
+                  href="/press/#collections"
                   className="hover:text-accent transition-colors"
                 >
                   Collections
@@ -121,7 +121,7 @@ export default function RootLayout({
                     <span className="text-text-muted uppercase text-xs tracking-wider">
                       Browse
                     </span>
-                    <a href="/#collections" className="hover:text-accent">
+                    <a href="/press/#collections" className="hover:text-accent">
                       Collections
                     </a>
                     <Link href="/search" className="hover:text-accent">
