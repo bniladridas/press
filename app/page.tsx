@@ -28,7 +28,7 @@ export default function Home() {
             Christian life.
           </p>
           <div className="max-w-md mx-auto">
-            <form action="/search" method="GET" role="search">
+            <form action="/press/search" method="GET" role="search">
               <label htmlFor="home-search" className="sr-only">
                 Search books
               </label>
@@ -37,7 +37,7 @@ export default function Home() {
                 type="text"
                 name="q"
                 placeholder="Search by title, author, or topic..."
-                className="w-full px-5 py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+                className="w-full px-5 py-3 rounded-lg border border-border-light bg-transparent text-sm text-text-primary placeholder:text-text-muted/60 focus:outline-none focus:border-accent/40 transition-all"
               />
             </form>
           </div>
