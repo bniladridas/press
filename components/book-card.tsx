@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Book } from "@/lib/types";
 
 function StarRating({ rating = 4 }: { rating?: number }) {
@@ -14,7 +15,7 @@ function StarRating({ rating = 4 }: { rating?: number }) {
 
 export default function BookCard({ book }: { book: Book }) {
   return (
-    <a
+    <Link
       href={`/book/${book.id}`}
       className="book-card group block"
       aria-label={`${book.title} by ${book.author}`}
@@ -63,6 +64,6 @@ export default function BookCard({ book }: { book: Book }) {
           </span>
         )}
       </div>
-    </a>
+    </Link>
   );
 }

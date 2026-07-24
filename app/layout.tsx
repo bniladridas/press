@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 import { A11yProvider } from "@/components/a11y-provider";
 import A11yPanel from "@/components/a11y-panel";
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: "Press",
     description:
       "A bookshelf of Christian books.",
-    url: "https://press.example.com",
+    url: "https://bniladridas.github.io/press",
     siteName: "Press",
     locale: "en_US",
     type: "website",
@@ -39,8 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/press/favicon.ico" sizes="any" />
+        <link rel="icon" href="/press/favicon.svg" type="image/svg+xml" />
       </head>
       <body className="antialiased">
         <A11yProvider>
@@ -50,48 +51,48 @@ export default function RootLayout({
 
           <header className="site-header border-b border-border">
             <div className="container-wide py-6 flex items-center justify-between">
-              <a href="/" className="flex items-center gap-3">
+              <Link href="/" className="flex items-center gap-3">
                 <span
                   className="text-2xl font-semibold tracking-tight"
                   style={{ fontFamily: "var(--serif)" }}
                 >
                   Press
                 </span>
-              </a>
+              </Link>
               <nav
                 className="hidden md:flex items-center gap-8 text-sm text-text-secondary"
                 aria-label="Main navigation"
               >
-                <a
+                <Link
                   href="/#featured"
                   className="hover:text-accent transition-colors"
                 >
                   Featured
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#collections"
                   className="hover:text-accent transition-colors"
                 >
                   Collections
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/search"
                   className="hover:text-accent transition-colors"
                 >
                   Search
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/about"
                   className="hover:text-accent transition-colors"
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/contact"
                   className="hover:text-accent transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </nav>
             </div>
           </header>
@@ -120,26 +121,26 @@ export default function RootLayout({
                     <span className="text-text-muted uppercase text-xs tracking-wider">
                       Browse
                     </span>
-                    <a href="/#collections" className="hover:text-accent">
+                    <Link href="/#collections" className="hover:text-accent">
                       Collections
-                    </a>
-                    <a href="/search" className="hover:text-accent">
+                    </Link>
+                    <Link href="/search" className="hover:text-accent">
                       Search
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex flex-col gap-2">
                     <span className="text-text-muted uppercase text-xs tracking-wider">
                       About
                     </span>
-                    <a href="/about" className="hover:text-accent">
+                    <Link href="/about" className="hover:text-accent">
                       About Press
-                    </a>
-                    <a href="/editorial-policy" className="hover:text-accent">
+                    </Link>
+                    <Link href="/editorial-policy" className="hover:text-accent">
                       Editorial Policy
-                    </a>
-                    <a href="/contact" className="hover:text-accent">
+                    </Link>
+                    <Link href="/contact" className="hover:text-accent">
                       Contact
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

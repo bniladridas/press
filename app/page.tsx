@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   getFeaturedBooks,
   getRecentlyAddedBooks,
@@ -101,7 +102,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {collections.map((collection) => (
-              <a
+              <Link
                 key={collection.slug}
                 href={`/collection/${collection.slug}`}
                 className="group block p-6 rounded-lg border border-border hover:border-accent hover:bg-surface-hover transition-all"
@@ -121,7 +122,7 @@ export default function Home() {
                   {collection.books.length} book
                   {collection.books.length !== 1 ? "s" : ""}
                 </p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

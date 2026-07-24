@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBook, getBooksByAuthor, getAllBooks } from "@/lib/data";
 import { Metadata } from "next";
@@ -158,12 +159,12 @@ export default async function BookPage({ params }: Props) {
 
             <p className="text-lg text-text-secondary mb-6">
               by{" "}
-              <a
+              <Link
                 href={`/author/${book.authorSlug}`}
                 className="hover:text-accent transition-colors"
               >
                 {book.author}
-              </a>
+              </Link>
             </p>
 
             <div className="flex items-center gap-4 mb-8">
@@ -341,14 +342,14 @@ export default async function BookPage({ params }: Props) {
                   </h2>
                   <div className="flex flex-wrap gap-2">
                     {book.scriptureReferences.map((ref, i) => (
-                      <a
+                      <Link
                         key={i}
                         href={`/scripture/${encodeURIComponent(ref.book)}${ref.chapter ? `-${ref.chapter}` : ""}`}
                         className="category-pill"
                       >
                         {ref.book}
                         {ref.chapter ? ` ${ref.chapter}` : ""}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -389,7 +390,7 @@ export default async function BookPage({ params }: Props) {
                   {[...relatedBooks, ...relatedBySubject]
                     .slice(0, 6)
                     .map((b) => (
-                      <a
+                      <Link
                         key={b.id}
                         href={`/book/${b.id}`}
                         className="group block"
@@ -408,7 +409,7 @@ export default async function BookPage({ params }: Props) {
                           {b.title}
                         </h3>
                         <p className="text-xs text-text-muted">{b.author}</p>
-                      </a>
+                      </Link>
                     ))}
                 </div>
               </div>

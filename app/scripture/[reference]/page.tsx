@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBooksByScripture, scriptureBooks, getAllBooks } from "@/lib/data";
 import { Metadata } from "next";
@@ -113,13 +114,13 @@ export default async function ScripturePage({ params }: Props) {
             {scriptureBooks
               .filter((s) => s.testament === "new")
               .map((s) => (
-                <a
+                <Link
                   key={s.name}
                   href={`/scripture/${encodeURIComponent(s.name)}`}
                   className="category-pill text-center"
                 >
                   {s.name}
-                </a>
+                </Link>
               ))}
           </div>
           <h3 className="text-sm text-text-muted uppercase tracking-wider mb-3">
@@ -129,13 +130,13 @@ export default async function ScripturePage({ params }: Props) {
             {scriptureBooks
               .filter((s) => s.testament === "old")
               .map((s) => (
-                <a
+                <Link
                   key={s.name}
                   href={`/scripture/${encodeURIComponent(s.name)}`}
                   className="category-pill text-center"
                 >
                   {s.name}
-                </a>
+                </Link>
               ))}
           </div>
         </div>

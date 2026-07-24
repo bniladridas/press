@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllReadingLists } from "@/lib/data";
 import { Metadata } from "next";
 
@@ -27,7 +28,7 @@ export default function ReadingListsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {lists.map((list) => (
-            <a
+            <Link
               key={list.slug}
               href={`/reading-list/${list.slug}`}
               className="group block p-8 rounded-lg border border-border hover:border-accent hover:bg-surface-hover transition-all"
@@ -44,7 +45,7 @@ export default function ReadingListsPage() {
               <p className="text-sm text-text-muted">
                 {list.books.length} book{list.books.length !== 1 ? "s" : ""}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

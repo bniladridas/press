@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllCollections } from "@/lib/data";
 import { Metadata } from "next";
 
@@ -26,7 +27,7 @@ export default function CollectionsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {collections.map((collection) => (
-            <a
+            <Link
               key={collection.slug}
               href={`/collection/${collection.slug}`}
               className="group block p-8 rounded-lg border border-border hover:border-accent hover:bg-surface-hover transition-all"
@@ -46,7 +47,7 @@ export default function CollectionsPage() {
                 {collection.books.length} book
                 {collection.books.length !== 1 ? "s" : ""}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
