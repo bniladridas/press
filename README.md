@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Press
 
-## Getting Started
+A bookshelf of Christian books.
 
-First, run the development server:
+## What it includes
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 14 books with editorially written descriptions
+- 11 authors with biographies
+- 8 publishers
+- 15 collections by topic and tradition
+- 8 reading lists
+- Browse by Scripture reference
+- Client-side search
+- Editorial policy
+- Editorial contact
+- Accessibility panel with theme, text size, spacing, contrast, and font preferences
+- Reading mode on book detail pages
+- GitHub Pages deployment via GitHub Actions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository
+2. Run `npm install`
+3. Run `npm run dev`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Adding a book
 
-## Learn More
+Edit `content/books.json`. Each book requires:
 
-To learn more about Next.js, take a look at the following resources:
+- `id` and `title`
+- `author` and `authorSlug`
+- `description` written in neutral, descriptive language
+- `categories`, `tags`, and `subjects`
+- `availability` with links labeled as "View at..."
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Editorial voice
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Press uses quiet, respectful, precise language. Descriptions use words like "explores," "examines," "argues," and "reflects on." They avoid "brilliant," "powerful," "essential," and "groundbreaking."
 
-## Deploy on Vercel
+See `/editorial-policy` for full details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push to `main`. The GitHub Actions workflow builds the site and deploys to GitHub Pages automatically.
+
+## Built on
+
+Press is built on the ideas established in [palmshed/base](https://github.com/palmshed/base), a reusable foundation for static-first websites.
+
+## License
+
+MIT

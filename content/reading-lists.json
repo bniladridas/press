@@ -1,0 +1,52 @@
+{
+  "readingLists": [
+    {
+      "slug": "new-believer",
+      "title": "New Believer",
+      "description": "Reading for those beginning their journey of faith.",
+      "books": ["mere-christianity", "cost-of-discipleship", "knowing-god", "spiritual-disciplines"]
+    },
+    {
+      "slug": "understanding-jesus",
+      "title": "Understanding Jesus",
+      "description": "Books that explore who Jesus is and what He came to do.",
+      "books": ["cost-of-discipleship", "mere-christianity", "orthodoxy", "problem-of-pain"]
+    },
+    {
+      "slug": "prayer",
+      "title": "Prayer",
+      "description": "Growing in the life of prayer and communion with God.",
+      "books": ["spiritual-disciplines", "prayer-experiencing-awe", "knowing-god"]
+    },
+    {
+      "slug": "church-history",
+      "title": "Church History",
+      "description": "Tracing the story of the Christian church from its origins to today.",
+      "books": ["confessions", "city-of-god", "institutes-christian-religion", "pilgrims-progress"]
+    },
+    {
+      "slug": "knowing-the-bible",
+      "title": "Knowing the Bible",
+      "description": "Approaching Scripture with reverence, understanding, and love.",
+      "books": ["knowing-god", "desiring-god", "spiritual-disciplines"]
+    },
+    {
+      "slug": "early-church",
+      "title": "Early Church",
+      "description": "The writings and legacy of the first centuries of Christianity.",
+      "books": ["confessions", "city-of-god"]
+    },
+    {
+      "slug": "reformation",
+      "title": "Reformation",
+      "description": "The rediscovery of the gospel and its transformative power.",
+      "books": ["institutes-christian-religion", "cost-of-discipleship", "life-together"]
+    },
+    {
+      "slug": "christian-classics",
+      "title": "Christian Classics",
+      "description": "Works that have been read across centuries of Christian faith.",
+      "books": ["confessions", "pilgrims-progress", "imitation-of-christ", "institutes-christian-religion", "orthodoxy", "mere-christianity", "cost-of-discipleship"]
+    }
+  ]
+}

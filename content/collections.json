@@ -1,0 +1,94 @@
+{
+  "collections": [
+    {
+      "slug": "jesus",
+      "name": "Jesus",
+      "description": "Books centered on the person, work, and teachings of Jesus Christ.",
+      "books": ["cost-of-discipleship", "mere-christianity", "pilgrims-progress"]
+    },
+    {
+      "slug": "gospel",
+      "name": "Gospel",
+      "description": "Works exploring the good news of Jesus Christ and its implications.",
+      "books": ["cost-of-discipleship", "mere-christianity", "desiring-god"]
+    },
+    {
+      "slug": "prayer",
+      "name": "Prayer",
+      "description": "Books on the life of prayer and communion with God.",
+      "books": ["spiritual-disciplines", "prayer-experiencing-awe"]
+    },
+    {
+      "slug": "church",
+      "name": "Church",
+      "description": "Works on the nature, life, and mission of the Christian church.",
+      "books": ["life-together", "confessions", "city-of-god"]
+    },
+    {
+      "slug": "grace",
+      "name": "Grace",
+      "description": "Explorations of God's unmerited favor and its transformative power.",
+      "books": ["cost-of-discipleship", "mere-christianity", "orthodoxy"]
+    },
+    {
+      "slug": "faith",
+      "name": "Faith",
+      "description": "Books on the nature of Christian faith and trust in God.",
+      "books": ["mere-christianity", "knowing-god", "orthodoxy"]
+    },
+    {
+      "slug": "apologetics",
+      "name": "Apologetics",
+      "description": "Works that defend and explain the Christian faith.",
+      "books": ["mere-christianity", "problem-of-pain", "orthodoxy"]
+    },
+    {
+      "slug": "theology",
+      "name": "Theology",
+      "description": "Systematic and systematic explorations of Christian doctrine.",
+      "books": ["knowing-god", "institutes-christian-religion", "city-of-god"]
+    },
+    {
+      "slug": "church-fathers",
+      "name": "Church Fathers",
+      "description": "Writings from the early church fathers and their theological legacy.",
+      "books": ["confessions", "city-of-god"]
+    },
+    {
+      "slug": "puritans",
+      "name": "Puritans",
+      "description": "Works from the Puritan tradition of English Reformed theology.",
+      "books": ["pilgrims-progress", "desiring-god"]
+    },
+    {
+      "slug": "reformation",
+      "name": "Reformation",
+      "description": "Key texts from and about the Protestant Reformation.",
+      "books": ["institutes-christian-religion", "cost-of-discipleship"]
+    },
+    {
+      "slug": "devotional",
+      "name": "Devotional",
+      "description": "Books for personal devotional reading and spiritual growth.",
+      "books": ["imitation-of-christ", "spiritual-disciplines", "celebration-of-discipline"]
+    },
+    {
+      "slug": "biography",
+      "name": "Biography",
+      "description": "Biographical works about influential figures in Christian history.",
+      "books": ["confessions"]
+    },
+    {
+      "slug": "children",
+      "name": "Children",
+      "description": "Books for children and young readers about the Christian faith.",
+      "books": []
+    },
+    {
+      "slug": "classics",
+      "name": "Classics",
+      "description": "Enduring works that have shaped Christian thought across centuries.",
+      "books": ["confessions", "pilgrims-progress", "imitation-of-christ", "institutes-christian-religion", "orthodoxy", "mere-christianity", "cost-of-discipleship"]
+    }
+  ]
+}

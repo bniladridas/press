@@ -1,65 +1,151 @@
-import Image from "next/image";
+import {
+  getFeaturedBooks,
+  getRecentlyAddedBooks,
+  getAllCollections,
+  getAllBooks,
+} from "@/lib/data";
+import BookCard from "@/components/book-card";
 
 export default function Home() {
+  const featured = getFeaturedBooks();
+  const recentlyAdded = getRecentlyAddedBooks();
+  const collections = getAllCollections();
+  const allBooks = getAllBooks();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div>
+      <section className="py-20 md:py-28">
+        <div className="container-narrow text-center">
+          <h1
+            className="text-4xl md:text-5xl font-semibold text-text-primary mb-6"
+            style={{ fontFamily: "var(--serif)" }}
+          >
+            A quiet library of books centered on Jesus.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg text-text-secondary mb-10 max-w-xl mx-auto leading-relaxed">
+            Browse books on theology, Scripture, prayer, church history, and the
+            Christian life.
           </p>
+          <div className="max-w-md mx-auto">
+            <form action="/search" method="GET" role="search">
+              <label htmlFor="home-search" className="sr-only">
+                Search books
+              </label>
+              <input
+                id="home-search"
+                type="text"
+                name="q"
+                placeholder="Search by title, author, or topic..."
+                className="w-full px-5 py-3 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+              />
+            </form>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="py-16" aria-labelledby="featured-heading">
+        <div className="container-wide">
+          <div className="flex items-baseline justify-between mb-10">
+            <h2
+              id="featured-heading"
+              className="text-2xl font-semibold text-text-primary"
+              style={{ fontFamily: "var(--serif)" }}
+            >
+              Featured
+            </h2>
+            <div className="h-px flex-1 ml-8 bg-border" aria-hidden="true" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {featured.map((book) => (
+              <BookCard key={book.id} book={book} />
+            ))}
+          </div>
         </div>
-      </main>
+      </section>
+
+      <section className="py-16" aria-labelledby="recent-heading">
+        <div className="container-wide">
+          <div className="flex items-baseline justify-between mb-10">
+            <h2
+              id="recent-heading"
+              className="text-2xl font-semibold text-text-primary"
+              style={{ fontFamily: "var(--serif)" }}
+            >
+              Recently Added
+            </h2>
+            <div className="h-px flex-1 ml-8 bg-border" aria-hidden="true" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {recentlyAdded.map((book) => (
+              <BookCard key={book.id} book={book} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="py-16 bg-surface"
+        id="collections"
+        aria-labelledby="collections-heading"
+      >
+        <div className="container-wide">
+          <div className="flex items-baseline justify-between mb-10">
+            <h2
+              id="collections-heading"
+              className="text-2xl font-semibold text-text-primary"
+              style={{ fontFamily: "var(--serif)" }}
+            >
+              Collections
+            </h2>
+            <div className="h-px flex-1 ml-8 bg-border" aria-hidden="true" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {collections.map((collection) => (
+              <a
+                key={collection.slug}
+                href={`/collection/${collection.slug}`}
+                className="group block p-6 rounded-lg border border-border hover:border-accent hover:bg-surface-hover transition-all"
+              >
+                <h3
+                  className="text-lg font-medium text-text-primary group-hover:text-accent transition-colors mb-2"
+                  style={{ fontFamily: "var(--serif)" }}
+                >
+                  {collection.name}
+                </h3>
+                {collection.description && (
+                  <p className="text-sm text-text-muted line-clamp-2">
+                    {collection.description}
+                  </p>
+                )}
+                <p className="text-xs text-text-muted mt-3">
+                  {collection.books.length} book
+                  {collection.books.length !== 1 ? "s" : ""}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16" aria-labelledby="all-books-heading">
+        <div className="container-wide">
+          <div className="flex items-baseline justify-between mb-10">
+            <h2
+              id="all-books-heading"
+              className="text-2xl font-semibold text-text-primary"
+              style={{ fontFamily: "var(--serif)" }}
+            >
+              All Books
+            </h2>
+            <div className="h-px flex-1 ml-8 bg-border" aria-hidden="true" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {allBooks.map((book) => (
+              <BookCard key={book.id} book={book} />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

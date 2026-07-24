@@ -1,0 +1,60 @@
+{
+  "publishers": [
+    {
+      "slug": "touchstone",
+      "name": "Touchstone",
+      "description": "An imprint of Simon & Schuster that publishes books on Christian life, theology, and spirituality.",
+      "website": "https://www.simonandschuster.com",
+      "books": ["cost-of-discipleship"]
+    },
+    {
+      "slug": "harperone",
+      "name": "HarperOne",
+      "description": "A publisher of books on religion, spirituality, and inspirational literature.",
+      "website": "https://www.harpercollins.com",
+      "books": ["mere-christianity", "celebration-of-discipline", "problem-of-pain", "life-together"]
+    },
+    {
+      "slug": "penguin-classics",
+      "name": "Penguin Classics",
+      "description": "Penguin's imprint for classic literature, including many foundational Christian texts.",
+      "website": "https://www.penguinclassics.com",
+      "books": ["confessions", "city-of-god", "pilgrims-progress", "imitation-of-christ"]
+    },
+    {
+      "slug": "inter-varsity-press",
+      "name": "InterVarsity Press",
+      "description": "A publisher of Christian books that serves the university and the church with thoughtful, evangelical scholarship.",
+      "website": "https://www.ivpress.com",
+      "books": ["knowing-god"]
+    },
+    {
+      "slug": "multnomah",
+      "name": "Multnomah",
+      "description": "A Christian book publisher known for works of practical theology and spiritual growth.",
+      "website": "https://www.multnomah.com",
+      "books": ["desiring-god"]
+    },
+    {
+      "slug": "wjk",
+      "name": "Westminster John Knox Press",
+      "description": "The publishing arm of the Presbyterian Church (USA), publishing works of theology, ethics, and spirituality.",
+      "website": "https://www.wjkbooks.com",
+      "books": ["institutes-christian-religion"]
+    },
+    {
+      "slug": "image",
+      "name": "Image",
+      "description": "An imprint of Crown Publishing that focuses on spiritual writing, literature, and the arts.",
+      "website": "https://www.penguinrandomhouse.com",
+      "books": ["orthodoxy"]
+    },
+    {
+      "slug": "viking",
+      "name": "Viking",
+      "description": "A trade publishing imprint that publishes works of theology and spirituality.",
+      "website": "https://www.penguinrandomhouse.com",
+      "books": ["prayer-experiencing-awe"]
+    }
+  ]
+}

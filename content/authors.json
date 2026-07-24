@@ -1,0 +1,123 @@
+{
+  "authors": [
+    {
+      "slug": "dietrich-bonhoeffer",
+      "name": "Dietrich Bonhoeffer",
+      "portrait": "/authors/bonhoeffer.jpg",
+      "biography": "Dietrich Bonhoeffer (1906–1945) was a German Lutheran pastor, theologian, and anti-Nazi dissident. His writings on Christian ethics and discipleship have been widely read in modern theology. He was executed by the Nazis in April 1945.",
+      "tradition": "Lutheran",
+      "born": "1906",
+      "died": "1945",
+      "books": ["cost-of-discipleship", "life-together"],
+      "relatedAuthors": ["karl-barth", " martin-luther"]
+    },
+    {
+      "slug": "cs-lewis",
+      "name": "C.S. Lewis",
+      "portrait": "/authors/lewis.jpg",
+      "biography": "Clive Staples Lewis (1898–1963) was a British writer, literary scholar, and lay theologian. His works of apologetics, including Mere Christianity, and his Narnia Chronicles have been widely read by Christians and non-Christians alike.",
+      "tradition": "Anglican",
+      "born": "1898",
+      "died": "1963",
+      "books": ["mere-christianity", "problem-of-pain"],
+      "relatedAuthors": ["jrr-tolkien", "gk-chesterton"]
+    },
+    {
+      "slug": "augustine-of-hippo",
+      "name": "Augustine of Hippo",
+      "portrait": "/authors/augustine.jpg",
+      "biography": "Augustine of Hippo (354–430) was a Roman African bishop, theologian, and philosopher whose writings have been formative for Western Christianity. His Confessions and City of God are widely studied in Christian literature.",
+      "tradition": "Early Church",
+      "born": "354",
+      "died": "430",
+      "books": ["confessions", "city-of-god"],
+      "relatedAuthors": ["ambrose", "ambrosiaster"]
+    },
+    {
+      "slug": "john-bunyan",
+      "name": "John Bunyan",
+      "portrait": "/authors/bunyan.jpg",
+      "biography": "John Bunyan (1628–1688) was an English writer and Puritan preacher known for The Pilgrim's Progress, a widely studied work of English literature. He was imprisoned for his nonconformist preaching.",
+      "tradition": "Puritan",
+      "born": "1628",
+      "died": "1688",
+      "books": ["pilgrims-progress"],
+      "relatedAuthors": ["john-owen", "richard-baxter"]
+    },
+    {
+      "slug": "ji-packer",
+      "name": "J.I. Packer",
+      "portrait": "/authors/packer.jpg",
+      "biography": "James Innell Packer (1926–2020) was a British-born Canadian Reformed theologian whose book Knowing God has been widely read in evangelical circles.",
+      "tradition": "Reformed",
+      "born": "1926",
+      "died": "2020",
+      "books": ["knowing-god"],
+      "relatedAuthors": ["john-stott", "martyn-lloyd-jones"]
+    },
+    {
+      "slug": "richard-foster",
+      "name": "Richard Foster",
+      "portrait": "/authors/foster.jpg",
+      "biography": "Richard Foster is an American theologian and author known for his work on spiritual disciplines. He is the founder of Renovaré, a ministry focused on spiritual formation.",
+      "tradition": "Quaker",
+      "born": "1942",
+      "books": ["spiritual-disciplines"],
+      "relatedAuthors": ["henri-nouwen", "thomas-merton"]
+    },
+    {
+      "slug": "john-piper",
+      "name": "John Piper",
+      "portrait": "/authors/piper.jpg",
+      "biography": "John Piper is an American Reformed Baptist theologian and pastor, founder of Desiring God ministries. His concept of Christian hedonism has been widely discussed in evangelical theology.",
+      "tradition": "Reformed Baptist",
+      "born": "1946",
+      "books": ["desiring-god"],
+      "relatedAuthors": ["jonathan-edwards", "ji-packer"]
+    },
+    {
+      "slug": "john-calvin",
+      "name": "John Calvin",
+      "portrait": "/authors/calvin.jpg",
+      "biography": "John Calvin (1509–1564) was a French theologian, pastor, and reformer in Geneva during the Protestant Reformation. His Institutes of the Christian Religion is a widely studied work of systematic theology.",
+      "tradition": "Reformed",
+      "born": "1509",
+      "died": "1564",
+      "books": ["institutes-christian-religion"],
+      "relatedAuthors": ["martin-luther", "huldrych-zwingli"]
+    },
+    {
+      "slug": "thomas-a-kempis",
+      "name": "Thomas à Kempis",
+      "portrait": "/authors/kempis.jpg",
+      "biography": "Thomas à Kempis (c. 1380–1471) was a German-Dutch canon regular and the author of The Imitation of Christ, a widely read devotional book in Christian history.",
+      "tradition": "Devotional",
+      "born": "1380",
+      "died": "1471",
+      "books": ["imitation-of-christ"],
+      "relatedAuthors": ["meister-eckhart", "gerard-groote"]
+    },
+    {
+      "slug": "gk-chesterton",
+      "name": "G.K. Chesterton",
+      "portrait": "/authors/chesterton.jpg",
+      "biography": "Gilbert Keith Chesterton (1874–1936) was an English writer, poet, philosopher, and lay theologian. His Orthodoxy and The Everlasting Man are widely discussed works of Christian apologetics.",
+      "tradition": "Anglican/Catholic",
+      "born": "1874",
+      "died": "1936",
+      "books": ["orthodoxy"],
+      "relatedAuthors": ["cs-lewis", "hilaire-belloc"]
+    },
+    {
+      "slug": "timothy-keller",
+      "name": "Timothy Keller",
+      "portrait": "/authors/keller.jpg",
+      "biography": "Timothy Keller (1950–2023) was an American pastor, theologian, and author. He founded Redeemer Presbyterian Church in New York City and was known for his apologetic approach to urban ministry.",
+      "tradition": "Reformed Presbyterian",
+      "born": "1950",
+      "died": "2023",
+      "books": ["prayer-experiencing-awe"],
+      "relatedAuthors": ["cs-lewis", "martyn-lloyd-jones"]
+    }
+  ]
+}
