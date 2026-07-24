@@ -25,7 +25,7 @@
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Cost-Discipleship-Dietrich-Bonhoeffer/dp/0684815001", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/the-cost-of-discipleship/dietrich-bonhoeffer/9780684815008/pd/83850", "label": "View at Christianbook" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/the-cost-of-discipleship-dietrich-bonhoeffer/6809fffc5176d686", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/the-cost-of-discipleship-dietrich-bonhoeffer/1100225783", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=ANfH1fmvBKIC", "label": "View at Google Books" }
       ],
       "scriptureReferences": [
@@ -61,7 +61,7 @@
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Mere-Christianity-C-S-Lewis/dp/0060652926", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/mere-christianity/c-s-lewis/9780060652920/pd/2926X", "label": "View at Christianbook" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/mere-christianity-c-s-lewis/56290254aded4bd1", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/mere-christianity-c-s-lewis/1100549216", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=OF-YSMKCVwMC", "label": "View at Google Books" }
       ],
       "scriptureReferences": [
@@ -98,7 +98,7 @@
       "preview": "https://books.google.com/books?id=zIhGAAAAYAAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Confessions-Penguin-Classics-Saint-Augustine/dp/014044114X", "label": "View at Amazon" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/confessions-augustine-of-hippo/8dd14d796238717d", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/confessions-saint-augustine/1116627597", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=zIhGAAAAYAAJ", "label": "View at Google Books" }
       ],
       "scriptureReferences": [
@@ -133,7 +133,7 @@
       "preview": "https://books.google.com/books?id=LjxqAAAAMAAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Pilgrims-Progress-Penguin-Classics/dp/0141439718", "label": "View at Amazon" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/the-pilgrim-s-progress-john-bunyan/132bb480d4997789", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/the-pilgrims-progress-john-bunyan/1100878083", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=LjxqAAAAMAAJ", "label": "View at Google Books" }
       ],
       "featured": true,
@@ -164,7 +164,7 @@
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Knowing-God-J-I-Packer/dp/1433587262", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/knowing-god/j-i-packer/9781433587269/pd/3587269", "label": "View at Christianbook" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/knowing-god-j-i-packer/10958334", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/knowing-god-j-i-packer/1100419270", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=twcWEAAAQBAJ", "label": "View at Google Books" }
       ],
       "scriptureReferences": [
@@ -200,7 +200,7 @@
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Celebration-Discipline-path-Spiritual-Growth/dp/0060628391", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/celebration-of-discipline/richard-foster/9780062803887/pd/803881", "label": "View at Christianbook" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/celebration-of-discipline-special-anniversary-edition-richard-j-foster/89ea06d6f8596785", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/celebration-of-discipline-richard-j-foster/1100150936", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=FR4z93ezwqwC", "label": "View at Google Books" }
       ],
       "featured": false,
@@ -233,7 +233,7 @@
       "preview": "https://books.google.com/books?id=dXo2AAAAIAAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/City-Penguin-Classics-Augustine-Hippo/dp/0140448942", "label": "View at Amazon" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/the-city-of-god-st-augustine/542d43d99340a2ee", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/city-of-god-saint-augustine/1100059519", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=dXo2AAAAIAAJ", "label": "View at Google Books" }
       ],
       "featured": false,
@@ -263,7 +263,7 @@
       "preview": "https://books.google.com/books?id=NSjlftWk78kC",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Problem-Pain-C-S-Lewis/dp/0060652969", "label": "View at Amazon" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/the-problem-of-pain-c-s-lewis/30db0f1a17fec5db", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/the-problem-of-pain-c-s-lewis/1100554545", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=NSjlftWk78kC", "label": "View at Google Books" }
       ],
       "featured": false,
@@ -296,7 +296,7 @@
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Desiring-God-Meditations-Christian-Hedonist/dp/1433595974", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/desiring-god/john-piper/9781433595974/pd/595974", "label": "View at Christianbook" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/desiring-god-meditations-of-a-christian-hedonist-revised-edition-john-piper/31404da6b08f5fad", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/desiring-god-john-piper/1007456107", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=W7XDwAEACAAJ", "label": "View at Google Books" }
       ],
       "scriptureReferences": [
@@ -334,7 +334,7 @@
       "preview": "https://books.google.com/books?id=hWlIAAAAYAAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Calvin-Institutes-Christian-Religion-Set/dp/0664220282", "label": "View at Amazon" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/institutes-of-the-christian-religion-john-calvin/11960", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/institutes-of-the-christian-religion-john-calvin/1116786533", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=hWlIAAAAYAAJ", "label": "View at Google Books" }
       ],
       "featured": false,
@@ -367,7 +367,7 @@
       "preview": "https://books.google.com/books?id=s39qAAAAMAAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Imitation-Christ-Penguin-Classics/dp/0140440275", "label": "View at Amazon" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/the-imitation-of-christ-thomas-kempis/005759a8b1163c09", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/the-imitation-of-christ-thomas-a-kempis/1141344204", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=s39qAAAAMAAJ", "label": "View at Google Books" }
       ],
       "featured": false,
@@ -397,7 +397,7 @@
       "preview": "https://books.google.com/books?id=Yb35CAAAQBAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Orthodoxy-G-K-Chesterton/dp/0898705525", "label": "View at Amazon" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/orthodoxy-chesterton-g-k-chesterton/e5754a4ecb7a2597", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/orthodoxy-g-k-chesterton/1100050416", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=Yb35CAAAQBAJ", "label": "View at Google Books" }
       ],
       "featured": false,
@@ -428,7 +428,7 @@
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Life-Together-Exploration-Christian-Community/dp/0060608528", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/life-together/dietrich-bonhoeffer/9780060608521/pd/7153", "label": "View at Christianbook" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/life-together-the-classic-exploration-of-christian-community-dietrich-bonhoeffer/16592573", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/life-together-dietrich-bonhoeffer/1101124428", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=WRsqBgAAQBAJ", "label": "View at Google Books" }
       ],
       "featured": false,
@@ -459,7 +459,7 @@
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/Prayer-Experiencing-Awe-Intimacy-God/dp/0143108581", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/prayer-experiencing-awe-and-intimacy-with-god/timothy-keller/9780143108580/pd/3108580", "label": "View at Christianbook" },
-        { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/prayer-experiencing-awe-and-intimacy-with-god-timothy-keller/34a6f2bfbc2db2b7", "label": "View at Bookshop.org" },
+        { "store": "Barnes & Noble", "url": "https://www.barnesandnoble.com/w/prayer-timothy-keller/1119711677", "label": "View at Barnes & Noble" },
         { "store": "Google Books", "url": "https://books.google.com/books?id=u2PaCwAAQBAJ", "label": "View at Google Books" }
       ],
       "scriptureReferences": [

@@ -17,7 +17,7 @@ const HEADERS = {
 const TIMEOUT = 15_000;
 
 // Stores known to block automated requests (403/500) but working in browsers
-const BOT_BLOCKED_STORES = new Set(["Amazon", "Bookshop.org"]);
+const BOT_BLOCKED_STORES = new Set(["Amazon"]);
 
 async function checkUrl(url: string): Promise<{
   status: number;
