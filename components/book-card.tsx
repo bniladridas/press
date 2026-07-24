@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Book } from "@/lib/types";
 
 function StarRating({ rating = 4 }: { rating?: number }) {
@@ -21,23 +22,36 @@ export default function BookCard({ book }: { book: Book }) {
       aria-label={`${book.title} by ${book.author}`}
     >
       <div className="relative overflow-hidden rounded-md mb-4">
-        <div
-          className="book-cover w-full flex items-center justify-center p-6"
-          role="img"
-          aria-label={`Cover of ${book.title}`}
-        >
-          <div className="text-center">
-            <div
-              className="text-lg font-semibold text-text-primary leading-tight mb-2"
-              style={{ fontFamily: "var(--serif)" }}
-            >
-              {book.title}
-            </div>
-            <div className="text-xs text-text-muted uppercase tracking-wider">
-              {book.author}
+        {book.cover ? (
+          <div className="book-cover w-full">
+            <Image
+              src={book.cover}
+              alt={`Cover of ${book.title}`}
+              width={300}
+              height={450}
+              className="w-full h-full object-cover"
+              unoptimized
+            />
+          </div>
+        ) : (
+          <div
+            className="book-cover w-full flex items-center justify-center p-6"
+            role="img"
+            aria-label={`Cover of ${book.title}`}
+          >
+            <div className="text-center">
+              <div
+                className="text-lg font-semibold text-text-primary leading-tight mb-2"
+                style={{ fontFamily: "var(--serif)" }}
+              >
+                {book.title}
+              </div>
+              <div className="text-xs text-text-muted uppercase tracking-wider">
+                {book.author}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
       <h3
         className="text-base font-medium text-text-primary group-hover:text-accent transition-colors mb-1"

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getBook, getBooksByAuthor, getAllBooks } from "@/lib/data";
 import { Metadata } from "next";
@@ -65,26 +66,37 @@ export default async function BookPage({ params }: Props) {
           <div className="lg:col-span-1">
             <div className="sticky top-8">
               <div
-                className="book-cover w-full max-w-sm mx-auto flex items-center justify-center p-8"
-                role="img"
-                aria-label={`Cover of ${book.title} by ${book.author}`}
+                className="book-cover w-full max-w-sm mx-auto"
               >
-                <div className="text-center">
-                  <div
-                    className="text-2xl font-semibold text-text-primary leading-tight mb-3"
-                    style={{ fontFamily: "var(--serif)" }}
-                  >
-                    {book.title}
-                  </div>
-                  {book.subtitle && (
-                    <div className="text-sm text-text-muted italic mb-3">
-                      {book.subtitle}
+                {book.cover ? (
+                  <Image
+                    src={book.cover}
+                    alt={`Cover of ${book.title}`}
+                    width={400}
+                    height={600}
+                    className="w-full h-full object-cover rounded-md"
+                    unoptimized
+                  />
+                ) : (
+                  <div className="flex items-center justify-center p-8 h-full">
+                    <div className="text-center">
+                      <div
+                        className="text-2xl font-semibold text-text-primary leading-tight mb-3"
+                        style={{ fontFamily: "var(--serif)" }}
+                      >
+                        {book.title}
+                      </div>
+                      {book.subtitle && (
+                        <div className="text-sm text-text-muted italic mb-3">
+                          {book.subtitle}
+                        </div>
+                      )}
+                      <div className="text-xs text-text-muted uppercase tracking-wider">
+                        {book.author}
+                      </div>
                     </div>
-                  )}
-                  <div className="text-xs text-text-muted uppercase tracking-wider">
-                    {book.author}
                   </div>
-                </div>
+                )}
               </div>
 
               {book.coverSource && (
@@ -390,21 +402,34 @@ export default async function BookPage({ params }: Props) {
                   {[...relatedBooks, ...relatedBySubject]
                     .slice(0, 6)
                     .map((b) => (
-                      <Link
-                        key={b.id}
-                        href={`/book/${b.id}`}
-                        className="group block"
-                      >
-                        <div className="book-cover w-full mb-3 flex items-center justify-center p-4">
-                          <div className="text-center">
-                            <div
-                              className="text-sm font-semibold text-text-primary leading-tight"
-                              style={{ fontFamily: "var(--serif)" }}
-                            >
-                              {b.title}
-                            </div>
-                          </div>
-                        </div>
+                       <Link
+                         key={b.id}
+                         href={`/book/${b.id}`}
+                         className="group block"
+                       >
+                         <div className="book-cover w-full mb-3">
+                           {b.cover ? (
+                             <Image
+                               src={b.cover}
+                               alt={`Cover of ${b.title}`}
+                               width={200}
+                               height={300}
+                               className="w-full h-full object-cover rounded"
+                               unoptimized
+                             />
+                           ) : (
+                             <div className="flex items-center justify-center p-4 h-full">
+                               <div className="text-center">
+                                 <div
+                                   className="text-sm font-semibold text-text-primary leading-tight"
+                                   style={{ fontFamily: "var(--serif)" }}
+                                 >
+                                   {b.title}
+                                 </div>
+                               </div>
+                             </div>
+                           )}
+                         </div>
                         <h3 className="text-sm font-medium text-text-primary group-hover:text-accent transition-colors">
                           {b.title}
                         </h3>
