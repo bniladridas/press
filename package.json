@@ -8,14 +8,23 @@
     "start": "next start",
     "lint": "eslint",
     "test": "playwright test",
-    "test:links": "playwright test tests/availability.spec.ts"
+    "test:links": "playwright test tests/availability.spec.ts",
+    "cap:sync": "capacitor sync",
+    "cap:open:ios": "capacitor open ios",
+    "cap:open:android": "capacitor open android",
+    "build:app": "CAPACITOR=true next build && capacitor sync",
+    "icons": "node scripts/generate-icons.mjs"
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.2",
+    "@capacitor/core": "^8.4.2",
+    "@capacitor/ios": "^8.4.2",
     "next": "16.2.11",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.4.2",
     "@playwright/test": "^1.61.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
