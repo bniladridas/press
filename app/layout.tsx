@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/press/favicon.ico", sizes: "any" },
+      { url: "/press/favicon.svg", type: "image/svg+xml" },
     ],
   },
   robots: {
