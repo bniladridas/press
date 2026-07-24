@@ -260,11 +260,11 @@
       "tags": ["classic", "Anglican", "theodicy"],
       "cover": "/covers/problem-of-pain.jpg",
       "coverSource": "Cover image provided by the publisher.",
-      "preview": "https://books.google.com/books?id=0PwqDwAAQBAJ",
+      "preview": "https://books.google.com/books?id=NSjlftWk78kC",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/dp/0060652969", "label": "View at Amazon" },
         { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/the-problem-of-pain-c-s-lewis/11581", "label": "View at Bookshop.org" },
-        { "store": "Google Books", "url": "https://books.google.com/books?id=0PwqDwAAQBAJ", "label": "View at Google Books" }
+        { "store": "Google Books", "url": "https://books.google.com/books?id=NSjlftWk78kC", "label": "View at Google Books" }
       ],
       "featured": false,
       "recentlyAdded": true,
@@ -394,11 +394,11 @@
       "tags": ["classic", "Anglican", "apologetics"],
       "cover": "/covers/orthodoxy.jpg",
       "coverSource": "Cover image provided by the publisher.",
-      "preview": "https://books.google.com/books?id=1RmqHPcDmDIC",
+      "preview": "https://books.google.com/books?id=Yb35CAAAQBAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/dp/0385333501", "label": "View at Amazon" },
         { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/orthodoxy-g-k-chesterton/11576", "label": "View at Bookshop.org" },
-        { "store": "Google Books", "url": "https://books.google.com/books?id=1RmqHPcDmDIC", "label": "View at Google Books" }
+        { "store": "Google Books", "url": "https://books.google.com/books?id=Yb35CAAAQBAJ", "label": "View at Google Books" }
       ],
       "featured": false,
       "recentlyAdded": false,
@@ -424,12 +424,12 @@
       "tags": ["Lutheran", "classic", "community"],
       "cover": "/covers/life-together.jpg",
       "coverSource": "Cover image provided by the publisher.",
-      "preview": "https://books.google.com/books?id=JYFZpZKzSR0C",
+      "preview": "https://books.google.com/books?id=WRsqBgAAQBAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/dp/0060608520", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/life-together/dietrich-bonhoeffer/9780060608521/pd/7153", "label": "View at Christianbook" },
         { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/life-together-dietrich-bonhoeffer/11752", "label": "View at Bookshop.org" },
-        { "store": "Google Books", "url": "https://books.google.com/books?id=JYFZpZKzSR0C", "label": "View at Google Books" }
+        { "store": "Google Books", "url": "https://books.google.com/books?id=WRsqBgAAQBAJ", "label": "View at Google Books" }
       ],
       "featured": false,
       "recentlyAdded": true,
@@ -455,12 +455,12 @@
       "tags": ["Reformed", "evangelical", "prayer"],
       "cover": "/covers/prayer-keller.jpg",
       "coverSource": "Cover image provided by the publisher.",
-      "preview": "https://books.google.com/books?id=BaFlDwAAQBAJ",
+      "preview": "https://books.google.com/books?id=u2PaCwAAQBAJ",
       "availability": [
         { "store": "Amazon", "url": "https://www.amazon.com/dp/0525429379", "label": "View at Amazon" },
         { "store": "Christianbook", "url": "https://www.christianbook.com/prayer-experiencing-awe-and-intimacy-with-god/timothy-keller/9780143108580/pd/3108580", "label": "View at Christianbook" },
         { "store": "Bookshop.org", "url": "https://bookshop.org/p/books/prayer-experiencing-awe-and-intimacy-with-god-timothy-keller/12047", "label": "View at Bookshop.org" },
-        { "store": "Google Books", "url": "https://books.google.com/books?id=BaFlDwAAQBAJ", "label": "View at Google Books" }
+        { "store": "Google Books", "url": "https://books.google.com/books?id=u2PaCwAAQBAJ", "label": "View at Google Books" }
       ],
       "scriptureReferences": [
         { "book": "Psalms" },
