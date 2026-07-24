@@ -126,6 +126,26 @@ export default function AboutPage() {
               A calm, readable experience that encourages thoughtful reading
             </li>
           </ul>
+
+          <div className="divider" />
+
+          <p className="text-text-muted text-sm">
+            Press is built on{" "}
+            <a
+              href="https://palmshed.github.io/base"
+              className="underline hover:text-accent"
+            >
+              Base
+            </a>
+            , an open source foundation maintained by{" "}
+            <a
+              href="https://github.com/palmshed"
+              className="underline hover:text-accent"
+            >
+              Palmshed
+            </a>
+            .
+          </p>
         </div>
       </div>
     </div>
