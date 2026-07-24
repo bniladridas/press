@@ -25,7 +25,7 @@ export default function BookCard({ book }: { book: Book }) {
         {book.cover ? (
           <div className="book-cover w-full">
             <Image
-              src={book.cover}
+              src={`/press${book.cover}`}
               alt={`Cover of ${book.title}`}
               width={300}
               height={450}

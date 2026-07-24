@@ -70,7 +70,7 @@ export default async function BookPage({ params }: Props) {
               >
                 {book.cover ? (
                   <Image
-                    src={book.cover}
+                    src={`/press${book.cover}`}
                     alt={`Cover of ${book.title}`}
                     width={400}
                     height={600}
@@ -410,7 +410,7 @@ export default async function BookPage({ params }: Props) {
                          <div className="book-cover w-full mb-3">
                            {b.cover ? (
                              <Image
-                               src={b.cover}
+                                src={`/press${b.cover}`}
                                alt={`Cover of ${b.title}`}
                                width={200}
                                height={300}
