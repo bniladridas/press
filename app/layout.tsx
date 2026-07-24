@@ -26,6 +26,12 @@ export const metadata: Metadata = {
     description:
       "A bookshelf of Christian books.",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
@@ -39,10 +45,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/press/favicon.ico" sizes="any" />
-        <link rel="icon" href="/press/favicon.svg" type="image/svg+xml" />
-      </head>
       <body className="antialiased">
         <A11yProvider>
           <a href="#main-content" className="skip-link">
