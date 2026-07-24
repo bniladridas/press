@@ -63,18 +63,18 @@ export default function RootLayout({
                 className="hidden md:flex items-center gap-8 text-sm text-text-secondary"
                 aria-label="Main navigation"
               >
-                <Link
+                <a
                   href="/#featured"
                   className="hover:text-accent transition-colors"
                 >
                   Featured
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/#collections"
                   className="hover:text-accent transition-colors"
                 >
                   Collections
-                </Link>
+                </a>
                 <Link
                   href="/search"
                   className="hover:text-accent transition-colors"
@@ -121,9 +121,9 @@ export default function RootLayout({
                     <span className="text-text-muted uppercase text-xs tracking-wider">
                       Browse
                     </span>
-                    <Link href="/#collections" className="hover:text-accent">
+                    <a href="/#collections" className="hover:text-accent">
                       Collections
-                    </Link>
+                    </a>
                     <Link href="/search" className="hover:text-accent">
                       Search
                     </Link>
