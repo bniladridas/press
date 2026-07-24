@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Book } from "@/lib/types";
 import BookCard from "@/components/book-card";
 
-const ALL_BOOKS: Book[] = require("@/content/books.json").books;
+import ALL_BOOKS_RAW from "@/content/books.json";
+
+const ALL_BOOKS: Book[] = ALL_BOOKS_RAW.books;
 
 function searchLocal(query: string): Book[] {
   const q = query.toLowerCase();
@@ -30,15 +32,12 @@ function SearchInner() {
   const initialQuery = searchParams.get("q") || "";
 
   const [query, setQuery] = useState(initialQuery);
-  const [results, setResults] = useState<Book[]>([]);
-  const [hasSearched, setHasSearched] = useState(false);
-
-  useEffect(() => {
-    if (initialQuery.trim()) {
-      setResults(searchLocal(initialQuery));
-      setHasSearched(true);
-    }
-  }, [initialQuery]);
+  const [results, setResults] = useState<Book[]>(() =>
+    initialQuery.trim() ? searchLocal(initialQuery) : []
+  );
+  const [hasSearched, setHasSearched] = useState(() =>
+    initialQuery.trim().length > 0
+  );
 
   function handleChange(value: string) {
     setQuery(value);

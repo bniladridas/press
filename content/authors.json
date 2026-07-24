@@ -9,7 +9,7 @@
       "born": "1906",
       "died": "1945",
       "books": ["cost-of-discipleship", "life-together"],
-      "relatedAuthors": ["karl-barth", " martin-luther"]
+      "relatedAuthors": ["karl-barth", "martin-luther"]
     },
     {
       "slug": "cs-lewis",

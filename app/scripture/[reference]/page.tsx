@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { getBooksByScripture, scriptureBooks, getAllBooks } from "@/lib/data";
 import { Metadata } from "next";
 import BookCard from "@/components/book-card";

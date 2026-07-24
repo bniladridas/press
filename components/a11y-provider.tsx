@@ -72,19 +72,11 @@ function applyPrefs(p: A11yPreferences) {
 }
 
 export function A11yProvider({ children }: { children: ReactNode }) {
-  const [prefs, setPrefs] = useState<A11yPreferences>(defaults);
-  const [mounted, setMounted] = useState(false);
+  const [prefs, setPrefs] = useState<A11yPreferences>(() => loadPrefs());
 
   useEffect(() => {
-    const loaded = loadPrefs();
-    setPrefs(loaded);
-    applyPrefs(loaded);
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (mounted) applyPrefs(prefs);
-  }, [prefs, mounted]);
+    applyPrefs(prefs);
+  }, [prefs]);
 
   function update<K extends keyof A11yPreferences>(
     key: K,
