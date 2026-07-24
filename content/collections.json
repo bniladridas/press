@@ -70,7 +70,7 @@
       "slug": "devotional",
       "name": "Devotional",
       "description": "Books for personal devotional reading and spiritual growth.",
-      "books": ["imitation-of-christ", "spiritual-disciplines", "celebration-of-discipline"]
+      "books": ["imitation-of-christ", "spiritual-disciplines"]
     },
     {
       "slug": "biography",
