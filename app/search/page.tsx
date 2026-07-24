@@ -66,7 +66,7 @@ function SearchInner() {
             value={query}
             onChange={(e) => handleChange(e.target.value)}
             placeholder="Search by title, author, ISBN, topic, or scripture..."
-            className="w-full px-5 py-3 rounded-lg border border-border-light bg-transparent text-sm text-text-primary placeholder:text-text-muted/60 focus:outline-none focus:border-accent/40 transition-all"
+            className="w-full px-5 py-3 rounded-lg border border-border-light/60 bg-transparent text-sm text-text-primary placeholder:text-text-muted/50 focus:outline-none focus:border-border transition-colors"
             autoFocus
           />
           <p className="text-xs text-text-muted mt-3 text-center">
