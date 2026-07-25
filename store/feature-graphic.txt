@@ -1,0 +1,28 @@
+# Feature Graphic (Google Play)
+
+Dimensions: 1024 x 500 px
+
+Design notes:
+- Warm off-white background (#FAFAF8)
+- Book icon centered (the app icon book design)
+- "Press" in serif font below the icon
+- Subtitle: "A bookshelf of Christian books"
+- Clean, minimal, quiet — consistent with the app's visual language
+
+# Screenshots needed
+
+## Phone (Android): 16:9 or 9:16
+1. Home page — featured books grid
+2. Book detail page — cover, description, availability
+3. Search page — search results
+4. Collections page — theme-based browsing
+5. Reading mode — focused reading view
+
+## Phone (iOS): 6.7" and 6.1"
+Same as Android, but formatted for iPhone dimensions.
+
+## Tablet (iPad): 12.9"
+1. Home page — wider grid layout
+2. Book detail page — two-column layout
+
+All screenshots should use the light theme as the default.

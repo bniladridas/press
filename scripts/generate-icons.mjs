@@ -2,13 +2,30 @@ import sharp from "sharp";
 import { mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
+// Book-inspired app icon: closed book with spine, subtle page lines, and serif P
 const ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#FAFAF8"/>
-  <text x="256" y="340" font-family="Georgia, 'Times New Roman', serif" font-size="320" font-weight="bold" fill="#2C2C2C" text-anchor="middle">P</text>
+  <rect width="512" height="512" rx="96" fill="#FAFAF8"/>
+  <g transform="translate(108, 72)">
+    <rect x="0" y="0" width="240" height="320" rx="8" fill="#2C2C2C"/>
+    <rect x="16" y="0" width="224" height="320" rx="6" fill="#3A3A3A"/>
+    <line x1="24" y1="0" x2="24" y2="320" stroke="#4A4A4A" stroke-width="1.5"/>
+    <line x1="50" y1="48" x2="208" y2="48" stroke="#555" stroke-width="1" stroke-linecap="round"/>
+    <line x1="50" y1="72" x2="180" y2="72" stroke="#4A4A4A" stroke-width="1" stroke-linecap="round"/>
+    <line x1="50" y1="260" x2="208" y2="260" stroke="#4A4A4A" stroke-width="1" stroke-linecap="round"/>
+    <text x="132" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="140" font-weight="bold" fill="#FAFAF8" text-anchor="middle" dominant-baseline="central">P</text>
+  </g>
 </svg>`;
 
 const ADAPTIVE_FG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 432">
-  <text x="216" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="270" font-weight="bold" fill="#2C2C2C" text-anchor="middle">P</text>
+  <g transform="translate(88, 42)">
+    <rect x="0" y="0" width="200" height="268" rx="7" fill="#2C2C2C"/>
+    <rect x="13" y="0" width="187" height="268" rx="5" fill="#3A3A3A"/>
+    <line x1="20" y1="0" x2="20" y2="268" stroke="#4A4A4A" stroke-width="1.5"/>
+    <line x1="42" y1="40" x2="174" y2="40" stroke="#555" stroke-width="1" stroke-linecap="round"/>
+    <line x1="42" y1="60" x2="150" y2="60" stroke="#4A4A4A" stroke-width="1" stroke-linecap="round"/>
+    <line x1="42" y1="218" x2="174" y2="218" stroke="#4A4A4A" stroke-width="1" stroke-linecap="round"/>
+    <text x="110" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="116" font-weight="bold" fill="#FAFAF8" text-anchor="middle" dominant-baseline="central">P</text>
+  </g>
 </svg>`;
 
 const ADAPTIVE_BG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 432">
@@ -17,7 +34,16 @@ const ADAPTIVE_BG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 43
 
 const SPLASH_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1284 2778">
   <rect width="1284" height="2778" fill="#FAFAF8"/>
-  <text x="642" y="1340" font-family="Georgia, 'Times New Roman', serif" font-size="160" font-weight="bold" fill="#2C2C2C" text-anchor="middle">Press</text>
+  <g transform="translate(492, 1100)">
+    <rect x="0" y="0" width="300" height="400" rx="12" fill="#2C2C2C"/>
+    <rect x="20" y="0" width="280" height="400" rx="10" fill="#3A3A3A"/>
+    <line x1="30" y1="0" x2="30" y2="400" stroke="#4A4A4A" stroke-width="2"/>
+    <line x1="60" y1="60" x2="260" y2="60" stroke="#555" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="60" y1="90" x2="220" y2="90" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="60" y1="330" x2="260" y2="330" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="165" y="220" font-family="Georgia, 'Times New Roman', serif" font-size="170" font-weight="bold" fill="#FAFAF8" text-anchor="middle" dominant-baseline="central">P</text>
+  </g>
+  <text x="642" y="1620" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="bold" fill="#8A8A82" text-anchor="middle" letter-spacing="6">PRESS</text>
 </svg>`;
 
 const ANDROID_SIZES = {
@@ -65,13 +91,12 @@ async function generate() {
 
   // Android Play Store icon
   const androidPlay = join(androidRes, "mipmap-xxxhdpi");
-  await sharp(Buffer.from(ICON_SVG)).resize(512, 512).png().toFile(join(androidPlay, "ic_launcher-playstore.png"));
+  await sharp(Buffer.from(ICON_SVG)).resize(512, 512).png().toFile(join(androidPlay, "ic_launcher_playstore.png"));
 
   // Android adaptive icon layers
   const drawable = join(androidRes, "drawable");
   mkdirSync(drawable, { recursive: true });
   await sharp(Buffer.from(ADAPTIVE_FG)).resize(432, 432).png().toFile(join(drawable, "ic_launcher_foreground.png"));
-  await sharp(Buffer.from(ADAPTIVE_BG)).resize(432, 432).png().toFile(join(drawable, "ic_launcher_background.png"));
 
   // iOS icons
   const iosAssets = join(root, "ios/App/App/Assets.xcassets/AppIcon.appiconset");

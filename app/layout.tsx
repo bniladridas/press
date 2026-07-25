@@ -143,6 +143,9 @@ export default function RootLayout({
                     <Link href="/contact" className="hover:text-accent">
                       Contact
                     </Link>
+                    <Link href="/privacy" className="hover:text-accent">
+                      Privacy
+                    </Link>
                   </div>
                 </div>
               </div>
