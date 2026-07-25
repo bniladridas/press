@@ -28,7 +28,7 @@ export default function Home() {
             Christian life.
           </p>
           <div className="max-w-md mx-auto">
-            <form action="/press/search" method="GET" role="search">
+            <form action={`${process.env.NEXT_PUBLIC_BASE_PATH}/search`} method="GET" role="search">
               <label htmlFor="home-search" className="sr-only">
                 Search books
               </label>

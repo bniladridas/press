@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/press/favicon.ico", sizes: "any" },
-      { url: "/press/favicon.svg", type: "image/svg+xml" },
+      { url: `${process.env.NEXT_PUBLIC_BASE_PATH}/favicon.ico`, sizes: "any" },
+      { url: `${process.env.NEXT_PUBLIC_BASE_PATH}/favicon.svg`, type: "image/svg+xml" },
     ],
   },
   robots: {
@@ -66,13 +66,13 @@ export default function RootLayout({
                 aria-label="Main navigation"
               >
                 <a
-                  href="/press/#featured"
+                  href={`${process.env.NEXT_PUBLIC_BASE_PATH}/#featured`}
                   className="hover:text-accent transition-colors"
                 >
                   Featured
                 </a>
                 <a
-                  href="/press/#collections"
+                  href={`${process.env.NEXT_PUBLIC_BASE_PATH}/#collections`}
                   className="hover:text-accent transition-colors"
                 >
                   Collections
@@ -123,7 +123,7 @@ export default function RootLayout({
                     <span className="text-text-muted uppercase text-xs tracking-wider">
                       Browse
                     </span>
-                    <a href="/press/#collections" className="hover:text-accent">
+                    <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/#collections`} className="hover:text-accent">
                       Collections
                     </a>
                     <Link href="/search" className="hover:text-accent">
