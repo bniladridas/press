@@ -16,12 +16,21 @@ A bookshelf of Christian books.
 - Accessibility panel with theme, text size, spacing, contrast, and font preferences
 - Reading mode on book detail pages
 - GitHub Pages deployment via GitHub Actions
+- Capacitor mobile apps for Android and iOS
 
 ## Getting started
+
+### Web
 
 1. Clone this repository
 2. Run `npm install`
 3. Run `npm run dev`
+
+### Mobile (Android / iOS)
+
+1. Run `npm run build:app` (builds with empty basePath for Capacitor)
+2. Run `npm run cap:sync` (syncs web assets to native projects)
+3. Run `npm run cap:open:android` or `npm run cap:open:ios`
 
 ## Adding a book
 
@@ -37,7 +46,7 @@ Edit `content/books.json`. Each book requires:
 
 Press uses quiet, respectful, precise language. Descriptions use words like "explores," "examines," "argues," and "reflects on." They avoid "brilliant," "powerful," "essential," and "groundbreaking."
 
-See `/editorial-policy` for full details.
+See the [editorial policy](https://bniladridas.github.io/press/editorial-policy) for full details.
 
 ## Deployment
 

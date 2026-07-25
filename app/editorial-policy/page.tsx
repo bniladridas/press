@@ -221,7 +221,7 @@ export default function EditorialPolicyPage() {
           </p>
 
           <ul className="text-text-secondary leading-relaxed space-y-2 list-disc list-inside mb-4">
-            <li>Scripture references (already in progress)</li>
+            <li>Scripture references</li>
             <li>Historical periods (Early Church, Reformation, Modern)</li>
             <li>Church councils and confessions</li>
             <li>Reading level and audience</li>

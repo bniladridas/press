@@ -12,7 +12,7 @@
       "name": "HarperOne",
       "description": "A publisher of books on religion, spirituality, and inspirational literature.",
       "website": "https://www.harpercollins.com",
-      "books": ["mere-christianity", "celebration-of-discipline", "problem-of-pain", "life-together"]
+      "books": ["mere-christianity", "spiritual-disciplines", "problem-of-pain", "life-together"]
     },
     {
       "slug": "penguin-classics",

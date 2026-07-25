@@ -132,7 +132,7 @@ export default function AboutPage() {
           <p className="text-text-muted text-sm">
             Press is built on{" "}
             <a
-              href="https://palmshed.github.io/base"
+              href="https://github.com/palmshed/base"
               className="underline hover:text-accent"
             >
               Base

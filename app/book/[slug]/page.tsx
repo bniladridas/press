@@ -23,18 +23,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function StarRating({ rating = 4 }: { rating?: number }) {
-  return (
-    <div className="stars text-lg" aria-label={`${rating} out of 5 stars`}>
-      {Array.from({ length: 5 }, (_, i) => (
-        <span key={i} aria-hidden="true">
-          {i < rating ? "\u2605" : "\u2606"}
-        </span>
-      ))}
-    </div>
-  );
-}
-
 export default async function BookPage({ params }: Props) {
   const { slug } = await params;
   const book = getBook(slug);
@@ -179,14 +167,11 @@ export default async function BookPage({ params }: Props) {
               </Link>
             </p>
 
-            <div className="flex items-center gap-4 mb-8">
-              <StarRating />
-              {book.published && (
-                <span className="text-sm text-text-muted">
-                  Originally published {book.published}
-                </span>
-              )}
-            </div>
+            {book.published && (
+              <p className="text-sm text-text-muted mb-8">
+                Originally published {book.published}
+              </p>
+            )}
 
             {/* Publication Details */}
             <div className="mb-10 p-6 bg-surface rounded-lg border border-border">
@@ -396,7 +381,7 @@ export default async function BookPage({ params }: Props) {
                   className="text-xl font-semibold text-text-primary mb-6"
                   style={{ fontFamily: "var(--serif)" }}
                 >
-                  More by this author
+                  More from this library
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                   {[...relatedBooks, ...relatedBySubject]

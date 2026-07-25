@@ -2,18 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Book } from "@/lib/types";
 
-function StarRating({ rating = 4 }: { rating?: number }) {
-  return (
-    <div className="stars text-sm" aria-label={`${rating} out of 5`}>
-      {Array.from({ length: 5 }, (_, i) => (
-        <span key={i} aria-hidden="true">
-          {i < rating ? "\u2605" : "\u2606"}
-        </span>
-      ))}
-    </div>
-  );
-}
-
 export default function BookCard({ book }: { book: Book }) {
   return (
     <Link
@@ -71,7 +59,6 @@ export default function BookCard({ book }: { book: Book }) {
         )}
       </div>
       <div className="mt-2 flex items-center gap-3">
-        <StarRating />
         {book.published && (
           <span className="text-xs text-text-muted">
             Published {book.published}

@@ -45,7 +45,7 @@
     {
       "slug": "theology",
       "name": "Theology",
-      "description": "Systematic and systematic explorations of Christian doctrine.",
+      "description": "Systematic explorations of Christian doctrine.",
       "books": ["knowing-god", "institutes-christian-religion", "city-of-god"]
     },
     {
@@ -77,12 +77,6 @@
       "name": "Biography",
       "description": "Biographical works about influential figures in Christian history.",
       "books": ["confessions"]
-    },
-    {
-      "slug": "children",
-      "name": "Children",
-      "description": "Books for children and young readers about the Christian faith.",
-      "books": []
     },
     {
       "slug": "classics",
