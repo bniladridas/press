@@ -2,6 +2,8 @@
 
 A bookshelf of Christian books.
 
+This project follows the [Palmshed Engineering Philosophy](https://github.com/palmshed/palmshed.github.io/blob/main/PHILOSOPHY.md).
+
 ## What it includes
 
 - 14 books with editorially written descriptions
